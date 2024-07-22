@@ -1,0 +1,47 @@
+<div class="container film-info">
+    <div *ngIf="film">
+        <div class="card mb-3">
+            <img src="{{film.movie_banner}}" class="card-img-top" alt="...">
+            <div>
+                
+            </div>
+            <div class="hstack gap-2 film-desc">
+                <div>
+                    <h5 class="card-title">{{film.title | uppercase}}</h5>
+                    <p class="card-text">Original title: <span style="font-style: italic;">{{film.original_title}} ({{film.original_title_romanised}})</span> </p>
+                </div>
+                <div class="ms-auto" style="margin-top: -30px;">
+                    <p class="card-text rating "> RATING: <b>{{film.rt_score}}/100</b></p>
+                </div>
+            </div>
+            <div class="card-body" style="width: 70%;">
+                <ul class="list-group list-group-flush">
+                    <h6 class="list-group-item">ABOUT</h6>
+                    <li class="list-group-item hstack gap-2">
+                        <div>Directed by: </div>
+                        <div class="ms-auto">{{film.director}}</div>
+                    </li>
+                    <li class="list-group-item hstack gap-2">
+                        <div>Producer: </div>
+                        <div class="ms-auto">{{film.producer}}</div>
+                    </li>
+                    <li class="list-group-item hstack gap-2">
+                        <div>Released: </div>
+                        <div class="ms-auto">{{film.release_date}}</div>
+                    </li>
+                    <li class="list-group-item hstack gap-2">
+                        <div>Running time: </div>
+                        <div class="ms-auto">{{film.running_time}} mins</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="film-desc">
+                <h6 class="">DESCRIPTION</h6>
+                <p style="width: 80%;">{{film.description}}</p>
+            </div>
+            <div class="back_button">
+                <button (click)="goBack()" class="btn btn-primary" style="width: 50%; margin-bottom: 20px;" type="button">Back</button>
+            </div>     
+        </div>
+    </div>
+</div>

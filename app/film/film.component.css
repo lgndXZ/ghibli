@@ -1,0 +1,28 @@
+h5{
+  font-size: 3.5em;
+}
+h6{
+  font-size: 1.5em;
+}
+ul span{
+  text-align: left;
+}
+
+.film-info{
+  margin-top: 50px;
+}
+.card img{
+  height: 450px;
+}
+.rating{
+  font-size: 1.8em;
+}
+.film-desc{
+  background: rgba(180, 231, 246, 0.2);
+  padding: 30px;
+}
+.back_button{
+  width: 100%; 
+  text-align: center;
+  background: rgba(180, 231, 246, 0.2);
+}
